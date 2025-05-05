@@ -1,0 +1,51 @@
+:root{
+   --primary-color:#007bff;
+   --background-color:#f9f9f9;
+   --text-color:#333;
+   --accent-color:#ff5722;
+   --font-stack:'Segoe UI',Tohama, Geneva, Venfana, sans-serif;
+
+}
+body{
+    font-family: var(--font-stack);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    padding:20;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #007bff;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+  }
+  
+  .Header-Menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .Header-Menu li {
+    margin: 0 15px;
+  }
+  
+  .Header-Menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .Header-Menu a:hover {
+    text-decoration: underline;
+  }
+  
