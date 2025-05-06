@@ -1,29 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarek Platform</title>
-  <link rel="stylesheet" href="MyStyle.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Design</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+  </head>
+  <body>
 
-  <header class="header">
-    <nav class="Header-Menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#cv">My CV</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="fa fa-gear"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#FF9800"></li>
+            <li data-color="#E91E63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03A9F4"></li>
+            <li data-color="#4CAF50"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Random Backgrounds</h4>
+          <div class="random-backgrounds">
+            <span class="yes active" data-background="yes">Yes</span>
+            <span class="no" data-background="no">No</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <h4>Show Bullets</h4>
+          <div class="bullets-option">
+            <span class="yes active" data-display="show">Yes</span>
+            <span class="no" data-display="hide">No</span>
+          </div>
+        </div>
+        <button class="reset-options">Reset Options</button>
+      </div>
+    </div>
+    <!-- End Settings Box -->
 
-  <main>
-    <!-- You can create sections here like About, Portfolio, etc. -->
-  </main>
+    <!-- Start Nav Bullets -->
+    <div class="nav-bullets">
+      <div class="bullet" data-section=".about-us">
+        <div class="tooltip">About Us</div>
+      </div>
+      <div class="bullet" data-section=".skills">
+        <div class="tooltip">MY Skills</div>
+      </div>
+      <div class="bullet" data-section=".gallery">
+        <div class="tooltip">MY Gallery</div>
+      </div>
+      <div class="bullet" data-section=".timeline">
+        <div class="tooltip">Timeline</div>
+      </div>
+      <div class="bullet" data-section=".features">
+        <div class="tooltip">Features</div>
+      </div>
+      <div class="bullet" data-section=".testimonials">
+        <div class="tooltip">Testimonials</div>
+      </div>
+    </div>
+    <!-- End Nav Bullets -->
 
-</body>
+    <!-- Start Landing Page -->
+    <div class="landing-page">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="header-area">
+          <div class="logo">Tarek DEV</div>
+          <div class="links-container">
+            <ul class="links">
+              <li><a href="#" data-section=".about-us">About</a></li>
+              <li><a href="#" data-section=".skills">Skills</a></li>
+              <li><a href="#" data-section=".gallery">Gallery</a></li>
+              <li><a href="#" data-section=".timeline">Timeline</a></li>
+              <li><a href="#" data-section=".features">Features</a></li>
+              <li><a href="#" data-section=".testimonials">Testimonials</a></li>
+            </ul>
+            <button class="toggle-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="introduction-text">
+        <h1>We Are <span>Creative</span> Agency</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste</p>
+      </div>
+    </div>
+    <!-- End Landing Page -->
+
+    <!-- Start About Us -->
+    <div class="container">
+      <div class="about-us">
+        <div class="info-box">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum, tenetur dolores esse magni ratione distinctio! Quod iusto neque fuga, maxime quos nostrum quibusdam dicta deserunt blanditiis non voluptate id?</p>
+        </div>
+        <div class="image-box">
+          <img src="imgs/about-us.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- End About Us -->
+
+    <!-- Start Our Skills -->
+    <!-- Start Technical Skills -->
+<div class="skills">
+  <div class="container">
+    <h2>Technical Skills</h2>
+
+    <!-- Back-end -->
+    <div class="skill-box">
+      <div class="skill-name">C</div>
+      <div class="skill-progress"><span data-progress="80%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">C++</div>
+      <div class="skill-progress"><span data-progress="85%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">C#</div>
+      <div class="skill-progress"><span data-progress="90%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">Python</div>
+      <div class="skill-progress"><span data-progress="90%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">PHP</div>
+      <div class="skill-progress"><span data-progress="80%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">Java</div>
+      <div class="skill-progress"><span data-progress="70%"></span></div>
+    </div>
+
+    <!-- Front-end -->
+    <div class="skill-box">
+      <div class="skill-name">HTML</div>
+      <div class="skill-progress"><span data-progress="90%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">CSS</div>
+      <div class="skill-progress"><span data-progress="85%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-progress"><span data-progress="80%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">Bootstrap</div>
+      <div class="skill-progress"><span data-progress="85%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">Sass</div>
+      <div class="skill-progress"><span data-progress="75%"></span></div>
+    </div>
+
+    <!-- Database -->
+    <div class="skill-box">
+      <div class="skill-name">SQL Server</div>
+      <div class="skill-progress"><span data-progress="80%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">T-SQL</div>
+      <div class="skill-progress"><span data-progress="75%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">MySQL</div>
+      <div class="skill-progress"><span data-progress="85%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">SQLite</div>
+      <div class="skill-progress"><span data-progress="70%"></span></div>
+    </div>
+
+    <!-- Frameworks -->
+    <div class="skill-box">
+      <div class="skill-name">ASP.NET MVC Core</div>
+      <div class="skill-progress"><span data-progress="80%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">WordPress</div>
+      <div class="skill-progress"><span data-progress="75%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">TypeScript</div>
+      <div class="skill-progress"><span data-progress="70%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">React</div>
+      <div class="skill-progress"><span data-progress="75%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">Redis</div>
+      <div class="skill-progress"><span data-progress="65%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">Node.js</div>
+      <div class="skill-progress"><span data-progress="70%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">Flask</div>
+      <div class="skill-progress"><span data-progress="80%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">CakePHP</div>
+      <div class="skill-progress"><span data-progress="65%"></span></div>
+    </div>
+
+    <!-- RESTful APIs -->
+    <div class="skill-box">
+      <div class="skill-name">RESTful API (Python)</div>
+      <div class="skill-progress"><span data-progress="80%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">RESTful API (C#)</div>
+      <div class="skill-progress"><span data-progress="85%"></span></div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-box">
+      <div class="skill-name">Docker</div>
+      <div class="skill-progress"><span data-progress="70%"></span></div>
+    </div>
+    <div class="skill-box">
+      <div class="skill-name">GitHub</div>
+      <div class="skill-progress"><span data-progress="90%"></span></div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- End Our Skills -->
+
+    <!-- Start Gallery -->
+    <div class="gallery">
+      <div class="container">
+        <h2> Gallery</h2>
+        <div class="images-box">
+          <img src="imgs/01.jpg" alt="Image One">
+          <img src="imgs/02.jpg" alt="Image Two">
+          <img src="imgs/03.jpg" alt="Image Three">
+          <img src="imgs/04.jpg" alt="Image Four">
+          <img src="imgs/05.jpg" alt="Image Five">
+          <img src="imgs/06.png" alt="">
+          <img src="imgs/07.jpg" alt="">
+          <img src="imgs/08.jpg" alt="">
+          <img src="imgs/09.jpg" alt="">
+          <img src="imgs/10.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- End Gallery -->
+
+    <!-- Start Timeline -->
+   <!-- Start Timeline -->
+<div class="timeline">
+  <div class="container">
+    <div class="timeline-content">
+
+      <div class="year">2025</div>
+      <div class="left">
+        <div class="content">
+          <h3>Tarek-Online Platform</h3>
+          <p>Décembre 2024 – Mars 2025 – Développement d'une plateforme e-commerce. Backend : Python Flask, SQL. Frontend : HTML, Bootstrap, JavaScript.</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="right">
+        <div class="content">
+          <h3>Site éducatif de programmation</h3>
+          <p>Novembre 2024 – Création d'un site éducatif avec ajout de vidéos, leçons et fichiers. Backend : Python Flask, SQL Chemical. Frontend : HTML, Bootstrap, JavaScript.</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="year">2024</div>
+      <div class="left">
+        <div class="content">
+          <h3>HBNB Platform</h3>
+          <p>Juillet 2024 – Développement d'une plateforme de location de vacances. Technologies utilisées : Python Flask, SQLAlchemy, JavaScript, HTML, CSS.</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="year">2023</div>
+      <div class="right">
+        <div class="content">
+          <h3>Application gestion permis de conduire</h3>
+          <p>Novembre 2023 – Développement d'une application 3-tiers avec C#, programmation orientée objet, base de données SQL.</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="left">
+        <div class="content">
+          <h3>Stage Développeur Web - Logicia Informatique</h3>
+          <p>Janvier - Février 2023 – Développement de site web, e-commerce, création d'application stagiaire, CakePHP, WordPress, JavaScript, HTML, CSS, jQuery, Bootstrap, MySQL.</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="year">2022</div>
+      <div class="right">
+        <div class="content">
+          <h3>Stage Développeur Web - NetPhone Plus</h3>
+          <p>Décembre 2022 – Réparation mobile/PC, mise à jour logiciels, développement site du magasin avec C#, HTML, MySQL, Bootstrap, CSS, JavaScript, ASP.NET MVC Core.</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="year">2020</div>
+      <div class="left">
+        <div class="content">
+          <h3>Web Designer - Sunshine Dreams</h3>
+          <p>Mars - Août 2020 – Conception et développement de sites, modélisation d'applications, normes de sécurité, rédaction de code, mise en ligne de correctifs.</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="right">
+        <div class="content">
+          <h3>Développeur - Hadaf Solutions</h3>
+          <p>Septembre 2019 - Mars 2020 – Développement de sites web, respect des normes de sécurité, gestion de projet, évolution logicielle.</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="year">2017</div>
+      <div class="left">
+        <div class="content">
+          <h3>Freelance - Damas, Syrie</h3>
+          <p>2013 - 2017 – Programmation d'applications et sites pour étudiants en business, maintenance informatique, support technique, mises à jour.</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="year">2013</div>
+      <div class="right">
+        <div class="content">
+          <h3>Autoentrepreneur - Soueida, Syrie</h3>
+          <p>2008 - 2013 – Installation, maintenance d’équipements informatiques, vente de matériel informatique.</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+    </div>
+  </div>
+</div>
+<!-- End Timeline -->
+
+
+    <!-- Start Features -->
+    <div class="features">
+      <h2>MY Features</h2>
+      <div class="container">
+        <div class="feat-box">
+          <img src="imgs/programming.svg" alt="">
+          <h4>Development</h4>
+          <p>IM are professional marketeers, IM will do anything you imagine in no time.</p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/advertising.svg" alt="">
+          <h4>Marketing</h4>
+          <p>IM are professional marketeers, IM will do anything you imagine in no time.</p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/hosting-icon.svg" alt="">
+          <h4>Hosting</h4>
+          <p>IM are professional marketeers, IM will do anything you imagine in no time.</p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/mobile-app.svg" alt="">
+          <h4>Mobile Develope</h4>
+          <p>IM are professional marketeers, IM will do anything you imagine in no time.</p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/graphic-design.svg" alt="">
+          <h4>Cloud and Servers</h4>
+          <p>IM are professional marketeers, IM will do anything you imagine in no time.</p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/web-design.svg" alt="">
+          <h4>Seo</h4>
+          <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- End Features -->
+
+    <div class="testimonials">
+      <div class="container">
+        <h2>Education & Experience</h2>
+    
+        <div class="ts-box">
+          <p>Holberton ecole Développeur web<br>
+          BAC+2 du 05/03/2024 au 15/11/2024</p>
+          <div class="person-info">
+            <img src="https://placehold.it/80/DDD" alt="">
+            <h4>Holberton School</h4>
+            <p>Formation intensive</p>
+          </div>
+        </div>
+    
+        <div class="ts-box">
+          <p>Concepteur développeur d'application<br>
+          programmingadvices.com<br>
+          du 02/12/2024 au 26/09/2025</p>
+          <div class="person-info">
+            <img src="https://placehold.it/80/EEE" alt="">
+            <h4>Holberton School</h4>
+            <p>Projet pratique avancé</p>
+          </div>
+        </div>
+    
+        <div class="ts-box">
+          <p>LICENCE DE TECHNOLOGIE DE L'INFORMATION<br>
+          I-T-I-DARAA - SYRIE<br>
+          2011</p>
+          <div class="person-info">
+            <img src="https://placehold.it/80/AAA" alt="">
+            <h4>I-T-I Daraa</h4>
+            <p>Université en Syrie</p>
+          </div>
+        </div>
+    
+        <div class="ts-box">
+          <p>Algorithms Problem Solving niveau 1+2+3+4+5<br>
+          C++, OOP, Data Structures, C#.Net, RESTful API, .Net Core<br>
+          09/06/2023 - 17/11/2023</p>
+          <div class="person-info">
+            <img src="https://placehold.it/80/999" alt="">
+            <h4>Online Certifications</h4>
+            <p>Auto-formation avancée</p>
+          </div>
+        </div>
+    
+        <div class="ts-box">
+          <p>PREPA AVENIR 2<br>
+          AGITATO MAYENNE<br>
+          Octobre 2022 à Mars 2023</p>
+          <div class="person-info">
+            <img src="https://placehold.it/80/BBB" alt="">
+            <h4>AGITATO</h4>
+            <p>Préparation avenir</p>
+          </div>
+        </div>
+    
+        <div class="ts-box">
+          <p>BACHELOR TECHNOLOGIE DE L'INFORMATION<br>
+          SVU SYRIAN VIRTUAL UNIVERSITY - DAMAS - SYRIE<br>
+          2013 - 2017</p>
+          <div class="person-info">
+            <img src="https://placehold.it/80/CCC" alt="">
+            <h4>SVU - Damas</h4>
+            <p>Études supérieures</p>
+          </div>
+        </div>
+    
+        <div class="ts-box">
+          <p>BACCALAUREAT SPECIALITE MAINTENANCE INFORMATIQUE<br>
+          TECHNICAL HIGH SCHOOL - SOUEIDA - SYRIE<br>
+          2008</p>
+          <div class="person-info">
+            <img src="https://placehold.it/80/444" alt="">
+            <h4>Technical High School</h4>
+            <p>Baccalauréat technique</p>
+          </div>
+        </div>
+    
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- End Education & Experience -->
+    
+    <!-- Start Contact Us -->
+    <div class="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="">
+          <div class="left">
+            <input type="text" placeholder="Your Name" name="username">
+            <input type="text" placeholder="Your Phone" name="phone">
+            <input type="email" placeholder="Your Email" name="email">
+            <input type="text" placeholder="Subject" name="subject">
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!-- Start Footer -->
+    <div class="footer">Created With Love  Tarek Zain aldin </div>
+    <!-- End Footer -->
+    
+    <script src="js/master.js"></script>
+  </body>
 </html>
